@@ -84,6 +84,14 @@ func (c *Context) GetGroupEvent() *onebot.MessageEventGroupReq {
 	return c.groupEvent
 }
 
+func (c *Context) IsPrivate() bool {
+	return c.messageType == onebot.MessageTypePrivate
+}
+
+func (c *Context) IsGroup() bool {
+	return c.messageType == onebot.MessageTypeGroup
+}
+
 func (c *Context) GetMessageType() string {
 	return c.messageType
 }
