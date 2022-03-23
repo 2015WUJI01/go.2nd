@@ -1,0 +1,6 @@
+.idea/
+tmp/
+latest_news_link
+bin/
+
+go.sum
